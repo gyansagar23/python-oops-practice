@@ -1,5 +1,5 @@
 class TestCase:
-    depratment = "Modem Testing"
+    department = "Modem Testing"
 
     def __init__(self,test_name, priority, status):
         self.test_name = test_name
@@ -11,7 +11,7 @@ class TestCase:
     
     def pass_test(self):
         self.status =  "Passed"
-        print(f"{self.test_name} has passed")
+        print(f"{self.test_name} has {self.status}")
 
 test_1 =TestCase("P2P Intra Freq HO", 1, "Not Run")
 test_2 = TestCase("Full Buffer Peak Throughput", 2, "Not Run")
